@@ -4,7 +4,7 @@
     let invoices;
     let loadingDone = false;
 
-    fetch(`${import.meta.env.VITE_CPG_API_URL}/customers/my/invoices`, {
+    fetch(`${import.meta.env.VITE_CPG_API_URL}/v2/customers/my/invoices`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",

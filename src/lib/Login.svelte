@@ -11,7 +11,7 @@
         const email = event.target.email.value;
         const password = event.target.password.value; 
 
-        fetch(`${import.meta.env.VITE_CPG_API_URL}/customers/authenticate`, {
+        fetch(`${import.meta.env.VITE_CPG_API_URL}/v2/customers/authenticate`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -22,14 +22,14 @@
             })
         }).then(e => e.json()).then(data => {
             if (!data.token) {
-                eventDispatcher("Error")
+                $isAuth = false;
                 return;
             }
-            eventDispatcher("Success")
+            console.log(data)
             error_boolean = false;
             $isAuth = true;
             $Customer_Token = data.token;
-            window.location.href = "/";
+            // window.location.href = "/";
         });
     }
 

@@ -4,7 +4,7 @@
     let orders;
     let loadingDone = false;
 
-    fetch(`${import.meta.env.VITE_CPG_API_URL}/customers/my/orders`, {
+    fetch(`${import.meta.env.VITE_CPG_API_URL}/v2/customers/my/orders`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
