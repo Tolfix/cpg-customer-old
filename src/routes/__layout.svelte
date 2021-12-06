@@ -6,7 +6,7 @@
 </script>
 
 {#if !$isAuth}
-<Login />
+    <Login />
 {:else}
     <SideBar>
         <slot></slot>
