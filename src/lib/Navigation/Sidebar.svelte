@@ -18,27 +18,27 @@
             <ul class="mt-12">
                 <li class="flex w-full justify-between text-gray-300 cursor-pointer items-center mb-6">
                     <a href="/" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                        <span class="text-sm ml-2">Dashboard</span>
+                        <span class="text-2xl ml-2">Dashboard</span>
                     </a>
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
                     <a href="/orders" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                        <span class="text-sm ml-2">Orders</span>
+                        <span class="text-2xl ml-2">Orders</span>
                     </a>
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
                     <a href="/invoices" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                        <span class="text-sm ml-2">Invoices</span>
+                        <span class="text-2xl ml-2">Invoices</span>
                     </a>
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
                     <a href="/settings" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                        <span class="text-sm ml-2">Settings</span>
+                        <span class="text-2xl ml-2">Settings</span>
                     </a>
                 </li>
                 <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center">
                     <div class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                        <span on:click={logout} class="text-sm ml-2">Logout</span>
+                        <span on:click={logout} class="text-2xl ml-2">Logout</span>
                     </div>
                 </li>
             </ul>
